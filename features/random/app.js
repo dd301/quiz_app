@@ -1,4 +1,4 @@
-var getQuiz = function () {
+var quiz = (function () {
     var qIndex = 0;
     
     var questions = [
@@ -25,7 +25,5 @@ var getQuiz = function () {
       quizMe: getQuestion,
       submit: checkAnswer
     };
-  };
-  
-  var quiz = getQuiz();
+  })();
   
